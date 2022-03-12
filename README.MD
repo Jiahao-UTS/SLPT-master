@@ -1,4 +1,4 @@
-#Sparse Local Patch Transformer
+# Sparse Local Patch Transformer
 
 PyTorch evaluation code and pretrained models for **SLPT** (Sparse Local Patch Transformer).
 
