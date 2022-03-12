@@ -87,11 +87,11 @@ pip3 install -r requirements.txt
 
 We also provide a video demo script.
 
-<img src='Figures/Video1.gif' width="300px">
+<img src='Figures/Video1.gif' width="500px">
 
-<img src='Figures/Video2.gif' width="312px">
+<img src='Figures/Video2.gif' width="500px">
 
-<img src='Figures/Video3.gif' width="312px">
+<img src='Figures/Video3.gif' width="500px">
 
 1. Download [face detector](https://github.com/ShiqiYu/libfacedetection.train), copy the weight 
 ```yunet_final.pth``` to ```./Weight/Face_Detector/```
