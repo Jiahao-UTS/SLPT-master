@@ -7,11 +7,6 @@ PyTorch evaluation code and pretrained models for **SLPT** (Sparse Local Patch T
 ## Installation
 #### Note: this released version was tested on Python3.8, Pytorch 1.10.2 and Windows 11.
 
-Install system requirements:
-```
-sudo apt-get install python3-dev python3-pip python3-tk libglib2.0-0
-```
-
 Install python dependencies:
 ```
 pip3 install -r requirements.txt
