@@ -92,7 +92,7 @@ We also provide a video demo script.
 ```yunet_final.pth``` to ```./Weight/Face_Detector/```
 2. ```python Camera.py --video_source=<Video Path>```
 
-##Citation
+## Citation
 If you find this work or code is helpful in your research, please cite:
 ```
 @inproceedings{SLPT,
@@ -103,10 +103,10 @@ If you find this work or code is helpful in your research, please cite:
 }
 ```
 
-# License
+## License
 SLPT is released under the GPL-2.0 license. Please see the [LICENSE](LICENSE) file for more information.
 
-# Acknowledgments
+## Acknowledgments
    * This repository borrows or partially modifies the models from [HRNet](https://github.com/HRNet/HRNet-Facial-Landmark-Detection)
 and [DETR](https://github.com/facebookresearch/detr)
    * The video demo employs the [libfacedetection](https://github.com/ShiqiYu/libfacedetection.train) as the face detector.
