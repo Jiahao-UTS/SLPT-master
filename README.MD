@@ -102,7 +102,7 @@ If you find this work or code is helpful in your research, please cite:
 ```
 @inproceedings{SLPT,
   title={Sparse Local Patch Transformer for Robust Face Alignment and Landmarks},
-  author={Jiahao Xia and Weiwei Qu and Jianguo Zhang and Xi Wang and Min Xu},
+  author={Jiahao Xia and Weiwei Qu and Wenjian Huang and Jianguo Zhang and Xi Wang and Min Xu},
   booktitle={CVPR},
   year={2022}
 }
