@@ -81,7 +81,6 @@ def main_function():
         ])
     )
 
-    # 验证数据迭代器
     valid_loader = torch.utils.data.DataLoader(
         valid_dataset,
         batch_size = 1,
