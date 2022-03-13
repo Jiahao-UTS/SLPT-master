@@ -41,7 +41,7 @@ pip3 install -r requirements.txt
           <th></th>
           <td>Model Name</td>
           <td>NME (%)</td>
-          <td>FR<sub>0.1 (%)</sub></td>
+          <td>FR<sub>0.1</sub> (%)</td>
           <td>AUC<sub>0.1</sub></td>
           <td>download link</td>
         </tr>
