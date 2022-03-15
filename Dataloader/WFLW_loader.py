@@ -56,21 +56,18 @@ class WFLW_test_Dataset(Dataset):
         return len(self.database)
 
     def __getitem__(self, idx):
-        # 获取字典切片
         db_slic = copy.deepcopy(self.database[idx])
-        # 读取信息
+
         Img_path = db_slic['Img']
         BBox = db_slic['bbox']
         Points = db_slic['point']
         Annotated_Points = Points.copy()
 
-        # 读取图片
         Img = cv2.imread(Img_path)
 
-        # 获得图片大小
         Img_shape = Img.shape
         Img = cv2.cvtColor(Img, cv2.COLOR_RGB2BGR)
-        # 颜色通道转换
+
         if len(Img_shape) < 3:
             Img = cv2.cvtColor(Img, cv2.COLOR_GRAY2RGB)
         else:
