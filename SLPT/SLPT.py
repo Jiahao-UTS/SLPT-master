@@ -15,7 +15,6 @@ class Sparse_alignment_network(nn.Module):
                  return_interm_layers, dilation, nhead,  feedforward_dim,
                  initial_path, cfg):
         super(Sparse_alignment_network, self).__init__()
-        # 读取初始参数
         self.num_point = num_point
         self.d_model = d_model
         self.trainable = trainable
@@ -58,7 +57,6 @@ class Sparse_alignment_network(nn.Module):
                 nn.init.xavier_uniform_(p)
 
     def forward(self, image):
-        # 获取Batch_size
         bs = image.size(0)
 
         output_list = []
