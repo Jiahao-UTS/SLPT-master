@@ -179,10 +179,8 @@ class Transformer(nn.Module):
         SLPT_Inherent_Layer = Inherent_Layer(d_model, nhead, dim_feedforward, dropout,
                                                     activation, normalize_before)
         decoder_norm = nn.LayerNorm(d_model)
-        # 定义decoder
         self.Transformer_block = Transformer_block(SLPT_Inherent_Layer, num_decoder_layer, decoder_norm, return_intermediate=True)
 
-        # 初始化参数
         self._reset_parameters()
 
 
@@ -192,17 +190,13 @@ class Transformer(nn.Module):
                 nn.init.xavier_uniform_(p)
 
     def forward(self, src):
-        # 获取feature形状
         bs, num_feat, len_feat = src.size()
 
-        # 复制embedding
         structure_encoding = self.structure_encoding.repeat(bs, 1, 1).permute(1, 0, 2)
         landmark_query = self.landmark_query.repeat(bs, 1, 1).permute(1, 0, 2)
 
-        # src调整维度
         src = src.permute(1, 0, 2)
 
-        # 利用decoder获得最终输出
         tgt = torch.zeros_like(landmark_query)
         tgt = self.Transformer_block(tgt, src, pos=structure_encoding, query_pos=landmark_query)
 
