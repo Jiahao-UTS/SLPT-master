@@ -117,13 +117,9 @@ class Transformer_block(nn.Module):
 
     def __init__(self, Transformer_block, num_layers, norm=None, return_intermediate=False):
         super().__init__()
-        # 将decoder层复制n个
         self.layers = _get_clones(Transformer_block, num_layers)
-        # 定义卷积层的数量
         self.num_layers = num_layers
-        # 定义normaliztion
         self.norm = norm
-        # 定义是否返回中间结果
         self.return_intermediate = return_intermediate
 
     def forward(self, tgt, memory,
@@ -133,20 +129,16 @@ class Transformer_block(nn.Module):
                 memory_key_padding_mask: Optional[Tensor] = None,
                 pos: Optional[Tensor] = None,
                 query_pos: Optional[Tensor] = None):
-        # 定义输出结果
         output = tgt
 
-        # 输出中间结果的列表
         intermediate = []
 
-        # 将memory反复通过多个decoder
         for layer in self.layers:
             output = layer(output, memory, tgt_mask=tgt_mask,
                            memory_mask=memory_mask,
                            tgt_key_padding_mask=tgt_key_padding_mask,
                            memory_key_padding_mask=memory_key_padding_mask,
                            pos=pos, query_pos=query_pos)
-            # 如果返回中间结果，则对中间结果进行存储
             if self.return_intermediate:
                 intermediate.append(self.norm(output))
 
@@ -156,7 +148,6 @@ class Transformer_block(nn.Module):
                 intermediate.pop()
                 intermediate.append(output)
 
-        # 将中间结果叠加在一起返回
         if self.return_intermediate:
             return torch.stack(intermediate)
 
