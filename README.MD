@@ -61,7 +61,7 @@ pip3 install -r requirements.txt
           <td>4.128</td>
           <td>2.720</td>
           <td>0.596</td>
-          <td><a href="https://drive.google.com/file/d/1QRa5CCsGZEYBLdYfA-W8xjaJwGSPyQNC/view?usp=sharing">download</a></td>
+          <td><a href="https://drive.google.com/file/d/1fBBHqVSW4XQ_eB3ClYv4mS2pYmRWPuFJ/view?usp=sharing">download</a></td>
         </tr>
       </tbody>
     </table>
