@@ -15,7 +15,7 @@ pip3 install -r requirements.txt
 ## Run Evaluation on WFLW dataset
 1. Download and process WFLW dataset
     * Download WFLW dataset and annotation from [Here](https://wywu.github.io/projects/LAB/WFLW.html).
-    * Unzip WFLW dataset and annotations and move files into ```./dataset``` directory. Your directory should look like this:
+    * Unzip WFLW dataset and annotations and move files into ```./Dataset``` directory. Your directory should look like this:
         ```
         SLPT
         └───Dataset
