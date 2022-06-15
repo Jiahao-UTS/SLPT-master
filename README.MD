@@ -34,7 +34,7 @@ pip3 install -r requirements.txt
 
 2. Download pretrained model from Google Drive.
     * WFLW
-   
+
     <table>
       <thead>
         <tr style="text-align: right;">
@@ -65,8 +65,8 @@ pip3 install -r requirements.txt
         </tr>
       </tbody>
     </table>
-   
-    Put the model in ```./weight``` directory.
+
+    Put the model in ```./Weight``` directory.
 
 3. Test
 
@@ -74,7 +74,7 @@ pip3 install -r requirements.txt
     python test.py --checkpoint=<model_name>
     For example: python test.py --checkpoint=WFLW_6_layer.pth
     ```
-    
+
     Note: if you want to use the model with 12 layers, you need to change ```_C.TRANSFORMER.NUM_DECODER``` for
     6 to 12 in ```./Config/default.py```.
 
@@ -88,7 +88,7 @@ We also provide a video demo script.
 
 <img src='Figures/Video3.gif' width="500px">
 
-1. Download [face detector](https://github.com/ShiqiYu/libfacedetection.train), copy the weight 
+1. Download [face detector](https://github.com/ShiqiYu/libfacedetection.train), copy the weight
 ```yunet_final.pth``` to ```./Weight/Face_Detector/```
 2. ```python Camera.py --video_source=<Video Path>```
 
