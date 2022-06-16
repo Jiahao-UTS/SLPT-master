@@ -66,7 +66,7 @@ pip3 install -r requirements.txt
       </tbody>
     </table>
    
-    Put the model in ```./weight``` directory.
+    Put the model in ```./Weight``` directory.
 
 3. Test
 
