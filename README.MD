@@ -1,5 +1,5 @@
 # Sparse Local Patch Transformer
-
+## training code is released at [Here](https://github.com/Jiahao-UTS/SLPT_Training).
 PyTorch evaluation code and pretrained models for **SLPT** (Sparse Local Patch Transformer).
 
 <img src='Figures/overview.jpg' width="1000px">
