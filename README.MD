@@ -1,5 +1,5 @@
-## **New** Task-agnostic Unified Face Alignment (TUFA) is released at [Here](https://github.com/Jiahao-UTS/TUFA).
-## **New** Dynamic Sparse Local Patch Transformer (DSLPT) is released at [Here](https://github.com/Jiahao-UTS/DSLPT).
+# **New** Task-agnostic Unified Face Alignment (TUFA) is released at [Here](https://github.com/Jiahao-UTS/TUFA).
+# **New** Dynamic Sparse Local Patch Transformer (DSLPT) is released at [Here](https://github.com/Jiahao-UTS/DSLPT).
 
 # Sparse Local Patch Transformer
 ## training code is released at [Here](https://github.com/Jiahao-UTS/SLPT_Training).
